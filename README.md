@@ -5,14 +5,14 @@
 
 A modern, high-performance Shopify theme boilerplate based on the Dawn theme. This project is designed for maintainable and scalable Shopify theme development with:
 
-- 🛍 **Dawn as base** — latest Shopify Online Store 2.0 features
-- ⚡ **Vite** — optimized JS/CSS bundling with fast build times
-- 🌈 **Tailwind CSS** — utility-first styling
-- 🔮 **Vue.js (or Vanilla/Alpine options)** — optional reactive components
-- 🎨 **GSAP** — smooth animations
-- 📦 **pnpm** — fast dependency management
-- 🔧 **shopify.theme.toml** — environment configuration
-- 💨 **CSS/JS optimization** — production-ready builds
+- **Dawn as base** — latest Shopify Online Store 2.0 features
+- **Vite** — optimized JS/CSS bundling with fast build times
+- **Tailwind CSS** — utility-first styling
+- **Vue.js (or Vanilla/Alpine options)** — optional reactive components
+- **GSAP** — smooth animations
+- **pnpm** — fast dependency management
+- **shopify.theme.toml** — environment configuration
+- **CSS/JS optimization** — production-ready builds
 
 ---
 
@@ -85,7 +85,6 @@ pnpm deploy
 
 ```json
 "scripts": {
-  "dev": "vite --port 3000",
   "build": "vite build",
   "deploy": "shopify theme push -e env",
   "preview": "shopify theme preview -e env"
