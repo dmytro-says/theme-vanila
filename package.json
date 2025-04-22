@@ -1,0 +1,37 @@
+{
+  "name": "Theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -k -n VITE,SHOPIFY -c green,cyan \"pnpm run dev:vite\" \"pnpm run dev:shopify\"",
+    "dev:vite": "vite",
+    "dev:shopify": "shopify theme dev -e env",
+    "build": "vite build",
+    "deploy": "shopify theme push -e env",
+    "preview": "shopify theme preview -e env",
+    "vite:preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.1",
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@tailwindcss/postcss": "^4.1.4",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "concurrently": "^9.1.2",
+    "dotenv-cli": "^8.0.0",
+    "html-webpack-exclude-assets-plugin": "^0.0.7",
+    "postcss": "^8.5.3",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "gsap": "^3.12.7",
+    "vite": "^6.3.2"
+  }
+}

@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+.pnpm/
+.pnpm-cache/
+dist/
+build/
+*.log
+
+# MacOS
+.DS_Store
+
+# Linux
+*.swp
+
+# Windows
+Thumbs.db
+
+# Misc
+*.bak
+*.tmp
+*.swp
